@@ -1,0 +1,11 @@
+{
+  "name": "transjit-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Trans-Jit Express public website (Hindi + English, static).",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "preview": "node src/build.mjs && npx --yes serve@14.2.4 dist -l 4173"
+  }
+}
