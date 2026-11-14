@@ -183,7 +183,7 @@ const hi = {
     eyebrow: "ब्रांच",
     title: "हमारे ऑफिस — जहाँ आप हमसे मिल सकते हैं।",
     hoursLabel: "समय",
-    hours: "", // add real office hours here, e.g. "Mon–Sat, 9:30 am – 6:30 pm"
+    hours: "सोम–शनि, सुबह 9:30 – शाम 6:30",
     directions: "रास्ता देखें",
     call: "कॉल करें",
     photoSoon: "ऑफिस की फ़ोटो जल्द",
@@ -364,7 +364,7 @@ const en = {
     eyebrow: "Branches",
     title: "Our offices — where you can meet us.",
     hoursLabel: "Hours",
-    hours: "", // add real office hours here, e.g. "Mon–Sat, 9:30 am – 6:30 pm"
+    hours: "Mon–Sat, 9:30 am – 6:30 pm",
     directions: "Directions",
     call: "Call",
     photoSoon: "Office photo coming soon",
