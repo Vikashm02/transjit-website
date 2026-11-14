@@ -85,9 +85,9 @@ const hi = {
   otherLabel: "English",
   otherShort: "EN",
   meta: {
-    title: "ट्रांस-जीत एक्सप्रेस — सीमेंट प्लांट्स के लिए RDF और को-प्रोसेसिंग वेस्ट ट्रांसपोर्ट | 2012 से",
+    title: "RDF ट्रांसपोर्ट और सीमेंट प्लांट लॉजिस्टिक्स | ट्रांस-जीत एक्सप्रेस",
     description:
-      "ट्रांस-जीत एक्सप्रेस RDF, प्लास्टिक वेस्ट और को-प्रोसेसिंग मटीरियल को पूरे भारत में सीमेंट प्लांट्स तक पहुँचाता है। फुल ट्रक लोड, 500+ ट्रकों का नेटवर्क, विशाखापत्तनम, शहाबाद (कलबुर्गी) और हरिद्वार में ऑफिस।",
+      "20+ सीमेंट प्लांट्स तक RDF, प्लास्टिक वेस्ट और को-प्रोसेसिंग मटीरियल ट्रांसपोर्ट। पूरे भारत में फुल ट्रक लोड। शहाबाद, विशाखापत्तनम, हरिद्वार में ऑफिस।",
   },
   nav: [
     ["#services", "सेवाएँ"],
@@ -100,9 +100,9 @@ const hi = {
   skip: "मुख्य सामग्री पर जाएँ",
   hero: {
     eyebrow: "2012 से · पूरे भारत में ट्रांसपोर्ट",
-    title: ["सीमेंट भट्ठियों तक", "ईंधन पहुँचाने वाले", "भरोसेमंद ट्रांसपोर्टर।"],
+    title: ["सीमेंट प्लांट्स के लिए", "RDF और वैकल्पिक ईंधन", "ट्रांसपोर्ट।"],
     lead:
-      "ट्रांस-जीत एक्सप्रेस वेस्ट प्रोसेसर्स से RDF, प्लास्टिक वेस्ट और को-प्रोसेसिंग मटीरियल उठाकर सीमेंट प्लांट्स तक पहुँचाता है — समय पर गाड़ियाँ, डिजिटल LR और रोज़ की डिस्पैच रिपोर्ट के साथ।",
+      "हम सीमेंट भट्ठियों तक ईंधन पहुँचाते हैं। ट्रांस-जीत एक्सप्रेस वेस्ट प्रोसेसर्स से RDF, प्लास्टिक वेस्ट और को-प्रोसेसिंग मटीरियल उठाकर सीमेंट प्लांट्स तक पहुँचाता है — समय पर गाड़ियाँ, डिजिटल LR और रोज़ की डिस्पैच रिपोर्ट के साथ।",
     primary: "WhatsApp पर कोटेशन लें",
     secondary: "कॉल करें",
     mapCaption: "जून 2025 – नवंबर 2026 के हमारे प्रमुख रूट",
@@ -128,7 +128,7 @@ const hi = {
     eyebrow: "हमारे बारे में",
     title: "आम ट्रांसपोर्टर नहीं — इस काम के स्पेशलिस्ट।",
     body: [
-      "2012 में शुरू हुई ट्रांस-जीत एक्सप्रेस आज भारत के सबसे तेज़ी से बढ़ते फ्रेट सेगमेंट में काम करती है: सीमेंट प्लांट्स के लिए वैकल्पिक ईंधन (Alternative Fuel)।",
+      "2012 में शुरू हुई ट्रांस-जीत एक्सप्रेस आज भारत के सबसे तेज़ी से बढ़ते फ्रेट सेगमेंट में काम करती है: सीमेंट प्लांट्स के लिए वैकल्पिक ईंधन और कच्चा माल (AFR)।",
       "हम मुंबई, पुणे, नागपुर, हैदराबाद, बेंगलुरु, मंगलुरु, कोयंबटूर, तिरुपति, चेन्नई, कोच्चि, गोवा और हल्दिया समेत 50+ जगहों से माल उठाते हैं और कर्नाटक, महाराष्ट्र, छत्तीसगढ़, मध्य प्रदेश और आंध्र प्रदेश के 20+ सीमेंट प्लांट्स तक पहुँचाते हैं।",
     ],
     points: [
@@ -139,7 +139,7 @@ const hi = {
   },
   services: {
     eyebrow: "सेवाएँ",
-    title: "प्लांट की ज़रूरत के हिसाब से, हर दिन।",
+    title: "RDF, को-प्रोसेसिंग और फुल ट्रक लोड ट्रांसपोर्ट सेवाएँ",
     lead: "स्पेशल मटीरियल से लेकर आम फुल लोड तक — एक ही टीम, एक ही ज़िम्मेदारी।",
     tags: ["RDF", "प्लास्टिक वेस्ट", "को-प्रोसेसिंग", "इंडस्ट्रियल वेस्ट"],
     items: [
@@ -153,7 +153,7 @@ const hi = {
   },
   network: {
     eyebrow: "नेटवर्क",
-    title: "वो रूट जिन पर हर हफ़्ते हमारी गाड़ियाँ चलती हैं।",
+    title: "सीमेंट प्लांट्स तक हमारे ट्रक ट्रांसपोर्ट रूट",
     lead: "नीचे हमारे मौजूदा प्रमुख रूट हैं। नया रूट चाहिए? हम पूरे भारत में लोड लेते हैं।",
     groups: [
       ["कलबुर्गी क्लस्टर (कर्नाटक)", "वाडी · मलखेड़ · सेडम · कोडला · कल्लूर · चिंचोली · छत्रसाला", ["पुणे", "मुंबई", "हैदराबाद", "बेंगलुरु", "मंगलुरु", "कोयंबटूर", "तिरुपति", "तुमकुर", "बल्लारी", "कोच्चि", "चेन्नई", "गोवा"]],
@@ -181,7 +181,7 @@ const hi = {
   },
   branches: {
     eyebrow: "ब्रांच",
-    title: "हमारे ऑफिस — जहाँ आप हमसे मिल सकते हैं।",
+    title: "शहाबाद (कलबुर्गी), विशाखापत्तनम और हरिद्वार में हमारे ऑफिस",
     hoursLabel: "समय",
     hours: "सोम–शनि, सुबह 9:30 – शाम 6:30",
     directions: "रास्ता देखें",
@@ -223,6 +223,18 @@ const hi = {
     fieldTitle: "इन शहरों में हमारी फ़ील्ड टीम",
     fieldBody: "यहाँ ऑफिस नहीं है, पर हमारे लोग सप्लायर्स और प्लांट्स के बीच रोज़ काम करते हैं।",
     fieldCities: ["नागपुर", "दिल्ली NCR", "रुद्रपुर", "और अन्य सोर्सिंग हब"],
+  },
+  faq: {
+    eyebrow: "सवाल-जवाब",
+    title: "RDF और ट्रक ट्रांसपोर्ट पर अक्सर पूछे जाने वाले सवाल",
+    items: [
+      ["RDF ट्रांसपोर्ट क्या है?", "RDF (रिफ़्यूज़ डिराइव्ड फ़्यूल) प्रोसेस किया हुआ वेस्ट है, जिसे सीमेंट प्लांट कोयले की जगह भट्ठी में जलाते हैं (को-प्रोसेसिंग)। हम श्रेडेड और अनश्रेडेड RDF को वेस्ट प्रोसेसर्स से सीमेंट प्लांट्स तक बड़ी गाड़ियों में पहुँचाते हैं।"],
+      ["आप किन सीमेंट प्लांट्स तक डिलीवरी करते हैं?", "20+ प्लांट्स — ACC वाडी, चांदा और जामुल; UltraTech रावन, मलखेड़, सेडम और सेमराडीह; Ambuja चंद्रपुर और भाटापारा; Shree Cement कोडला; Chettinad कल्लूर; Dalmia बेलगावी; Heidelberg दमोह और अन्य।"],
+      ["आप किन इलाक़ों में काम करते हैं?", "पूरे भारत में। हमारे प्रमुख रूट महाराष्ट्र, तेलंगाना, कर्नाटक, तमिलनाडु, केरल, गोवा और पश्चिम बंगाल से कर्नाटक, महाराष्ट्र, छत्तीसगढ़, मध्य प्रदेश और आंध्र प्रदेश के सीमेंट प्लांट्स तक हैं।"],
+      ["कौन-से ट्रक मिलते हैं?", "12, 14, 16 और 18 पहिया ट्रक, 20 और 32 फ़ीट कंटेनर और 40 फ़ीट ट्रेलर।"],
+      ["क्या आप वेस्ट के अलावा दूसरा माल भी ढोते हैं?", "हाँ। हम किसी भी इंडस्ट्रियल माल के लिए फुल ट्रक लोड और पार्ट लोड लेते हैं।"],
+      ["रेट कैसे पता करें?", "लोडिंग पॉइंट, मंज़िल, मटीरियल और मात्रा WhatsApp पर भेजें, कॉल करें या नीचे का फ़ॉर्म भरें।"],
+    ],
   },
   contact: {
     eyebrow: "संपर्क",
@@ -266,9 +278,9 @@ const en = {
   otherLabel: "हिंदी",
   otherShort: "हि",
   meta: {
-    title: "Trans-Jit Express — RDF & Co-processing Waste Logistics for Cement Plants | Since 2012",
+    title: "RDF Transport for Cement Plants in India | Trans-Jit Express",
     description:
-      "Trans-Jit Express moves RDF, plastic waste and co-processing material to cement plants across India. Full truck load, a 500+ truck network, offices in Visakhapatnam, Shahabad (Kalaburagi) and Haridwar.",
+      "RDF, plastic waste & co-processing material transport to 20+ cement plants. Full truck loads across India. Offices in Shahabad, Vizag & Haridwar.",
   },
   nav: [
     ["#services", "Services"],
@@ -281,9 +293,9 @@ const en = {
   skip: "Skip to main content",
   hero: {
     eyebrow: "Since 2012 · Pan-India transport",
-    title: ["We move the fuel", "that feeds India's", "cement kilns."],
+    title: ["RDF & alternative fuel", "transport for India's", "cement plants."],
     lead:
-      "Trans-Jit Express carries RDF, plastic waste and co-processing material from waste processors to cement plants — with trucks lined up on time, digital LRs and a daily dispatch report.",
+      "We move the fuel that feeds India's cement kilns. Trans-Jit Express carries RDF, plastic waste and co-processing material from waste processors to cement plants — with trucks lined up on time, digital LRs and a daily dispatch report.",
     primary: "Get a quote on WhatsApp",
     secondary: "Call us",
     mapCaption: "Our main lanes, Jun 2025 – Nov 2026",
@@ -309,7 +321,7 @@ const en = {
     eyebrow: "About us",
     title: "Not a general carrier — a specialist.",
     body: [
-      "Founded in 2012, Trans-Jit Express works in one of India's fastest-growing freight segments: alternative fuel for cement plants.",
+      "Founded in 2012, Trans-Jit Express works in one of India's fastest-growing freight segments: alternative fuels and raw materials (AFR) for cement plants.",
       "We pick up from 50+ locations, including Mumbai, Pune, Nagpur, Hyderabad, Bengaluru, Mangaluru, Coimbatore, Tirupati, Chennai, Kochi, Goa and Haldia, and deliver to 20+ cement plants across Karnataka, Maharashtra, Chhattisgarh, Madhya Pradesh and Andhra Pradesh.",
     ],
     points: [
@@ -320,7 +332,7 @@ const en = {
   },
   services: {
     eyebrow: "Services",
-    title: "Built around the plant's schedule, every day.",
+    title: "RDF, co-processing and full truck load transport services",
     lead: "From specialist material to a plain full load — one team, one point of responsibility.",
     tags: ["RDF", "Plastic waste", "Co-processing", "Industrial waste"],
     items: [
@@ -334,7 +346,7 @@ const en = {
   },
   network: {
     eyebrow: "Network",
-    title: "The lanes our trucks run every week.",
+    title: "Our truck transport routes to cement plants",
     lead: "These are our current main lanes. Need a new one? We take loads anywhere in India.",
     groups: [
       ["Kalaburagi cluster (Karnataka)", "Wadi · Malkhed · Sedam · Kodla · Kallur · Chincholi · Chhatrasala", ["Pune", "Mumbai", "Hyderabad", "Bengaluru", "Mangaluru", "Coimbatore", "Tirupati", "Tumakuru", "Ballari", "Kochi", "Chennai", "Goa"]],
@@ -362,7 +374,7 @@ const en = {
   },
   branches: {
     eyebrow: "Branches",
-    title: "Our offices — where you can meet us.",
+    title: "Our offices in Shahabad (Kalaburagi), Visakhapatnam and Haridwar",
     hoursLabel: "Hours",
     hours: "Mon–Sat, 9:30 am – 6:30 pm",
     directions: "Directions",
@@ -404,6 +416,18 @@ const en = {
     fieldTitle: "Our field team is also in",
     fieldBody: "No office here, but our people work between suppliers and plants every day.",
     fieldCities: ["Nagpur", "Delhi NCR", "Rudrapur", "and other sourcing hubs"],
+  },
+  faq: {
+    eyebrow: "FAQ",
+    title: "RDF and truck transport: common questions",
+    items: [
+      ["What is RDF transport?", "RDF (refuse-derived fuel) is processed waste that cement plants burn in their kilns in place of coal — this is called co-processing. We transport shredded and unshredded RDF from waste processors to cement plants in high-volume trucks."],
+      ["Which cement plants do you deliver to?", "20+ plants, including ACC Wadi, Chanda and Jamul; UltraTech Rawan, Malkhed, Sedam and Semradih; Ambuja Chandrapur and Bhatapara; Shree Cement Kodla; Chettinad Kallur; Dalmia Belagavi; Heidelberg Damoh and more."],
+      ["Which areas do you cover?", "All of India. Our main lanes run from Maharashtra, Telangana, Karnataka, Tamil Nadu, Kerala, Goa and West Bengal to cement plants in Karnataka, Maharashtra, Chhattisgarh, Madhya Pradesh and Andhra Pradesh."],
+      ["What truck types do you have?", "12, 14, 16 and 18-wheelers, 20 ft and 32 ft containers, and 40 ft trailers."],
+      ["Do you carry cargo other than waste?", "Yes. We take full truck loads and part loads for any industrial cargo."],
+      ["How do I get a quote?", "Send your loading point, destination, material and quantity on WhatsApp, call us, or fill in the form below."],
+    ],
   },
   contact: {
     eyebrow: "Contact",
