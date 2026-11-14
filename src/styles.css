@@ -537,3 +537,14 @@ html[data-lang="hi"] .person-role { letter-spacing: 0.02em; font-size: 14px; }
 .person-lead p:last-child { color: #d6d4f2; font-size: 1.05em; max-width: 70ch; }
 @media (max-width: 920px) { .people { grid-template-columns: 1fr; } }
 @media (max-width: 640px) { .person { flex-direction: column; padding: 24px; } }
+
+.people-3 { grid-template-columns: repeat(3, 1fr); }
+.people-3 .person { flex-direction: column; }
+.person-founder { background: radial-gradient(420px 260px at 100% 0%, rgba(27, 163, 207, 0.3), transparent 60%), linear-gradient(150deg, var(--indigo) 0%, var(--indigo-900) 100%); border: 0; color: #d6d4f2; }
+.person-founder .avatar { width: 80px; height: 80px; font-size: 28px; background: linear-gradient(135deg, var(--cyan), #8be0fa); color: var(--indigo-900); }
+.person-founder .person-name { color: #fff; }
+.person-founder .person-role { color: var(--cyan-200); }
+.person-founder p:last-child { color: #d6d4f2; }
+.people-gap { margin-top: 64px; }
+@media (max-width: 1080px) { .people-3 { grid-template-columns: 1fr; } .people-3 .person { flex-direction: row; } }
+@media (max-width: 640px) { .people-3 .person { flex-direction: column; } }

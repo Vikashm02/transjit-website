@@ -100,8 +100,8 @@ function networkMap(t) {
 
 /* ---------- shared labels ---------- */
 const LBL = {
-  en: { home: "Home", pages: "Services & locations", branch: "Branch details", rdf: "Learn about RDF transport", routes: "See all routes", from: "From", to: "To", plants: "Plants", material: "Material", faq: "Frequently asked questions", ctaH: "Need trucks for this route?", ctaP: "Send your loading point, destination and quantity — we reply with a rate and truck availability.", hours: "Mon–Sat, 9:30 am – 6:30 pm", team: "Meet our leadership team" },
-  hi: { home: "होम", pages: "सेवाएँ और ब्रांच", branch: "ब्रांच की पूरी जानकारी", rdf: "RDF ट्रांसपोर्ट के बारे में", routes: "सभी रूट देखें", from: "कहाँ से", to: "कहाँ तक", plants: "प्लांट", material: "मटीरियल", faq: "अक्सर पूछे जाने वाले सवाल", ctaH: "इस रूट के लिए गाड़ी चाहिए?", ctaP: "लोडिंग पॉइंट, मंज़िल और मात्रा भेजें — हम रेट और गाड़ी की उपलब्धता बताएँगे।", hours: "सोम–शनि, सुबह 9:30 – शाम 6:30", team: "हमारी लीडरशिप टीम से मिलिए" },
+  en: { home: "Home", pages: "Services & locations", branch: "Branch details", rdf: "Learn about RDF transport", routes: "See all routes", from: "From", to: "To", plants: "Plants", material: "Material", faq: "Frequently asked questions", ctaH: "Need trucks for this route?", ctaP: "Send your loading point, destination and quantity — we reply with a rate and truck availability.", hours: "Mon–Sat, 9:30 am – 6:30 pm", team: "Meet our leadership team", cofounders: "Co-founders", cofoundersLead: "Trans-Jit Express was started in 2012 by three co-founders who share the leadership of the company, each heading a key part of the business.", ourTeam: "Our team" },
+  hi: { home: "होम", pages: "सेवाएँ और ब्रांच", branch: "ब्रांच की पूरी जानकारी", rdf: "RDF ट्रांसपोर्ट के बारे में", routes: "सभी रूट देखें", from: "कहाँ से", to: "कहाँ तक", plants: "प्लांट", material: "मटीरियल", faq: "अक्सर पूछे जाने वाले सवाल", ctaH: "इस रूट के लिए गाड़ी चाहिए?", ctaP: "लोडिंग पॉइंट, मंज़िल और मात्रा भेजें — हम रेट और गाड़ी की उपलब्धता बताएँगे।", hours: "सोम–शनि, सुबह 9:30 – शाम 6:30", team: "हमारी लीडरशिप टीम से मिलिए", cofounders: "सह-संस्थापक", cofoundersLead: "ट्रांस-जीत एक्सप्रेस की शुरुआत 2012 में तीन सह-संस्थापकों ने की, जो मिलकर कंपनी चलाते हैं — हर एक कारोबार का एक अहम हिस्सा संभालता है।", ourTeam: "हमारी टीम" },
 };
 const li = (t) => (t.lang === "hi" ? 1 : 0);
 const pagePath = (t, slug) => `${t.path}${slug}/`;
@@ -142,7 +142,7 @@ function orgLd() {
       slogan: "Let your success ride with us",
       areaServed: "IN",
       taxID: site.gstin,
-      founder: { "@type": "Person", name: leaders[0].name[0], jobTitle: "Founder" },
+      founder: leaders.filter((l) => l.founder).map((l) => ({ "@type": "Person", name: l.name[0], jobTitle: l.role[0] })),
       employee: leaders.map((l) => ({ "@type": "Person", name: l.name[0], jobTitle: l.role[0] })),
       description: en.meta.description,
     },
@@ -325,7 +325,15 @@ function subpage(t, pg) {
       if (sec.type === "office") return `<section class="sec sec-tight"><div class="wrap office-wrap">${officeCard(t, sec.key, false)}</div></section>`;
       const head = `<div class="sec-head reveal"><h2>${esc(sec.h2)}</h2>${sec.lead ? `<p class="body-l">${esc(sec.lead)}</p>` : ""}</div>`;
       let inner = "";
-      if (sec.type === "people") return `<section class="sec"><div class="wrap"><div class="people">${leaders.map((l, k) => `<article class="person glow reveal${k === 0 ? " person-lead" : ""}"><div class="avatar" aria-hidden="true">${esc(l.name[0].split(" ").filter((w) => /^[A-Z]/.test(w)).map((w) => w[0]).join("").slice(0, 2))}</div><div><p class="person-role">${esc(l.role[li(t)])}</p><h2 class="person-name">${esc(l.name[li(t)])}</h2><p>${esc(l.bio[li(t)])}</p></div></article>`).join("")}</div></div></section>`;
+      if (sec.type === "people") {
+        const card = (l) => `<article class="person glow reveal${l.founder ? " person-founder" : ""}"><div class="avatar" aria-hidden="true">${esc(l.initials)}</div><div><p class="person-role">${esc(l.role[li(t)])}</p><h3 class="person-name">${esc(l.name[li(t)])}</h3><p>${esc(l.bio[li(t)])}</p></div></article>`;
+        return `<section class="sec"><div class="wrap">
+          <div class="sec-head reveal"><h2>${esc(L.cofounders)}</h2><p class="body-l">${esc(L.cofoundersLead)}</p></div>
+          <div class="people people-3">${leaders.filter((l) => l.founder).map(card).join("")}</div>
+          <div class="sec-head reveal people-gap"><h2>${esc(L.ourTeam)}</h2></div>
+          <div class="people">${leaders.filter((l) => !l.founder).map(card).join("")}</div>
+        </div></section>`;
+      }
       if (sec.type === "text") inner = `<div class="prose reveal">${sec.paras.map((p) => `<p>${esc(p)}</p>`).join("")}</div>`;
       if (sec.type === "chips") inner = `<ul class="chips chips-lg reveal">${sec.items.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
       if (sec.type === "points") inner = `<ul class="points points-grid">${sec.items.map(([h, p]) => `<li class="point glow reveal"><span class="point-i">${icon("check")}</span><div><h3>${esc(h)}</h3><p>${esc(p)}</p></div></li>`).join("")}</ul>`;

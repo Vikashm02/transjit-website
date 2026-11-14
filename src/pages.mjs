@@ -54,33 +54,40 @@ const trucks = {
 export const leaders = [
   {
     id: "founder",
+    initials: "SM",
+    founder: true,
     name: ["Shyam Kishor Mishra", "श्याम किशोर मिश्रा"],
-    role: ["Founder", "संस्थापक"],
+    role: ["Co-founder", "सह-संस्थापक"],
     bio: [
-      "A graduate of Lalit Narayan Mithila University (LNMU) with an MBA, he has spent more than two decades in logistics management. He founded Trans-Jit Express in Visakhapatnam in 2012 to serve a handful of clients. His forward-thinking approach and hands-on experience have grown it into a pan-India transporter trusted by India's leading cement companies.",
-      "ललित नारायण मिथिला विश्वविद्यालय (LNMU) से स्नातक और MBA, लॉजिस्टिक्स मैनेजमेंट में दो दशक से ज़्यादा का अनुभव। 2012 में विशाखापत्तनम में कुछ ग्राहकों के साथ ट्रांस-जीत एक्सप्रेस की शुरुआत की। उनकी दूरदर्शी सोच और ज़मीनी अनुभव ने कंपनी को आज देश की बड़ी सीमेंट कंपनियों का भरोसेमंद, पैन-इंडिया ट्रांसपोर्टर बना दिया है।",
+      "A graduate of Lalit Narayan Mithila University (LNMU) with an MBA, he has spent more than two decades in logistics management. In 2012 he co-founded Trans-Jit Express in Visakhapatnam with C. K. Mishra and S. K. Mishra, starting with a handful of clients. His forward-thinking approach and hands-on experience have helped grow it into a pan-India transporter trusted by India's leading cement companies.",
+      "ललित नारायण मिथिला विश्वविद्यालय (LNMU) से स्नातक और MBA, लॉजिस्टिक्स मैनेजमेंट में दो दशक से ज़्यादा का अनुभव। 2012 में सी. के. मिश्रा और एस. के. मिश्रा के साथ मिलकर विशाखापत्तनम में कुछ ग्राहकों से ट्रांस-जीत एक्सप्रेस की शुरुआत की। उनकी दूरदर्शी सोच और ज़मीनी अनुभव ने कंपनी को आज देश की बड़ी सीमेंट कंपनियों का भरोसेमंद, पैन-इंडिया ट्रांसपोर्टर बनाने में अहम भूमिका निभाई है।",
     ],
   },
   {
     id: "ck",
+    initials: "CK",
+    founder: true,
     name: ["C. K. Mishra", "सी. के. मिश्रा"],
-    role: ["Head – North & North-East India", "हेड – उत्तर और पूर्वोत्तर भारत"],
+    role: ["Co-founder · Head – North & North-East India", "सह-संस्थापक · हेड – उत्तर और पूर्वोत्तर भारत"],
     bio: [
-      "A Magadh University graduate with more than 25 years in the transport industry, he leads our Haridwar office. Before joining us he worked with ATO (I) Ltd, Bharatiya Roadlines, Credence Logistics Ltd and Coastliners Pvt Ltd, delivering projects for BHEL, NTPC, ACC, ITC, HCC, Otis, KONE, Kirby Building Systems, Everest Industries, Vijai Electricals and Jyothy Laboratories.",
-      "मगध विश्वविद्यालय से स्नातक, ट्रांसपोर्ट उद्योग में 25 साल से ज़्यादा का अनुभव; हमारे हरिद्वार ऑफिस की कमान संभालते हैं। इससे पहले वे ATO (I) Ltd, भारतीय रोडलाइंस, क्रेडेंस लॉजिस्टिक्स और कोस्टलाइनर्स प्रा. लि. के साथ रहे और BHEL, NTPC, ACC, ITC, HCC, Otis, KONE, Kirby Building Systems, Everest Industries, Vijai Electricals और Jyothy Laboratories के प्रोजेक्ट सफलतापूर्वक पूरे किए।",
+      "One of the three co-founders of Trans-Jit Express, he leads our work across North and North-East India from the Haridwar office. A Magadh University graduate with more than 25 years in the transport industry. Before joining us he worked with ATO (I) Ltd, Bharatiya Roadlines, Credence Logistics Ltd and Coastliners Pvt Ltd, delivering projects for BHEL, NTPC, ACC, ITC, HCC, Otis, KONE, Kirby Building Systems, Everest Industries, Vijai Electricals and Jyothy Laboratories.",
+      "ट्रांस-जीत एक्सप्रेस के तीन सह-संस्थापकों में से एक; हरिद्वार ऑफिस से उत्तर और पूर्वोत्तर भारत का काम संभालते हैं। मगध विश्वविद्यालय से स्नातक, ट्रांसपोर्ट उद्योग में 25 साल से ज़्यादा का अनुभव। इससे पहले वे ATO (I) Ltd, भारतीय रोडलाइंस, क्रेडेंस लॉजिस्टिक्स और कोस्टलाइनर्स प्रा. लि. के साथ रहे और BHEL, NTPC, ACC, ITC, HCC, Otis, KONE, Kirby Building Systems, Everest Industries, Vijai Electricals और Jyothy Laboratories के प्रोजेक्ट सफलतापूर्वक पूरे किए।",
     ],
   },
   {
     id: "sk",
+    initials: "SK",
+    founder: true,
     name: ["S. K. Mishra", "एस. के. मिश्रा"],
-    role: ["National Head – Finance & Credit Control", "नेशनल हेड – फ़ाइनेंस और क्रेडिट कंट्रोल"],
+    role: ["Co-founder · Finance & Credit Control", "सह-संस्थापक · फ़ाइनेंस और क्रेडिट कंट्रोल"],
     bio: [
-      "A commerce graduate who began his transport career in 1995 with Union Roadways Ltd in Coimbatore — more than 30 years in the industry. He runs finance and credit control so that operations stay smooth. Outside work, he is an award-winning volleyball player.",
-      "कॉमर्स स्नातक; 1995 में कोयंबटूर में यूनियन रोडवेज़ लि. से ट्रांसपोर्ट करियर की शुरुआत — उद्योग में 30 साल से ज़्यादा का अनुभव। फ़ाइनेंस और क्रेडिट कंट्रोल संभालते हैं ताकि काम बिना रुकावट चले। साथ ही वे पुरस्कार विजेता वॉलीबॉल खिलाड़ी हैं।",
+      "One of the three co-founders of Trans-Jit Express, he heads finance and credit control so that operations stay smooth. A commerce graduate, he began his transport career in 1995 with Union Roadways Ltd in Coimbatore — more than 30 years in the industry. Outside work, he is an award-winning volleyball player.",
+      "ट्रांस-जीत एक्सप्रेस के तीन सह-संस्थापकों में से एक; फ़ाइनेंस और क्रेडिट कंट्रोल संभालते हैं ताकि काम बिना रुकावट चले। कॉमर्स स्नातक; 1995 में कोयंबटूर में यूनियन रोडवेज़ लि. से ट्रांसपोर्ट करियर की शुरुआत — उद्योग में 30 साल से ज़्यादा का अनुभव। साथ ही वे पुरस्कार विजेता वॉलीबॉल खिलाड़ी हैं।",
     ],
   },
   {
     id: "jsj",
+    initials: "JS",
     name: ["J. S. Jha", "जे. एस. झा"],
     role: ["National Head – Customer Relations", "नेशनल हेड – कस्टमर रिलेशंस"],
     bio: [
@@ -90,6 +97,7 @@ export const leaders = [
   },
   {
     id: "vk",
+    initials: "VK",
     name: ["Vikas Kumar", "विकास कुमार"],
     role: ["Head – IT", "हेड – IT"],
     bio: [
@@ -354,27 +362,27 @@ export const pages = [
     slug: "leadership",
     en: {
       title: "Leadership Team | Trans-Jit Express Transport Company",
-      description: "Meet the people behind Trans-Jit Express: founder Shyam Kishor Mishra and a leadership team with decades of experience in transport and logistics.",
+      description: "Meet the people behind Trans-Jit Express: co-founders Shyam Kishor Mishra, C. K. Mishra and S. K. Mishra, and a team with decades of transport experience.",
       crumb: "Leadership",
       eyebrow: "About us",
       h1: "Our leadership team",
       lead: "Trans-Jit Express is run by transport people. Our leaders bring decades of hands-on experience from India's road freight industry — and they are personally involved in the work we do for every customer.",
       sections: [{ type: "people" }],
       faq: [
-        ["Who founded Trans-Jit Express?", "Trans-Jit Express was founded in 2012 in Visakhapatnam by Shyam Kishor Mishra."],
+        ["Who founded Trans-Jit Express?", "Trans-Jit Express was co-founded in 2012 in Visakhapatnam by Shyam Kishor Mishra, C. K. Mishra and S. K. Mishra."],
         ["How experienced is the Trans-Jit Express team?", "Our leadership team has more than 100 years of combined experience in transport, logistics, finance and customer service."],
       ],
     },
     hi: {
       title: "लीडरशिप टीम | ट्रांस-जीत एक्सप्रेस ट्रांसपोर्ट कंपनी",
-      description: "ट्रांस-जीत एक्सप्रेस की टीम से मिलिए: संस्थापक श्याम किशोर मिश्रा और ट्रांसपोर्ट व लॉजिस्टिक्स में दशकों के अनुभव वाली लीडरशिप टीम।",
+      description: "ट्रांस-जीत एक्सप्रेस की टीम से मिलिए: सह-संस्थापक श्याम किशोर मिश्रा, सी. के. मिश्रा और एस. के. मिश्रा, और ट्रांसपोर्ट में दशकों के अनुभव वाली टीम।",
       crumb: "लीडरशिप",
       eyebrow: "हमारे बारे में",
       h1: "हमारी लीडरशिप टीम",
       lead: "ट्रांस-जीत एक्सप्रेस को ट्रांसपोर्ट से जुड़े लोग ही चलाते हैं। हमारी टीम के पास भारत के रोड फ्रेट उद्योग का दशकों का ज़मीनी अनुभव है — और हर ग्राहक के काम में वे ख़ुद जुड़े रहते हैं।",
       sections: [{ type: "people" }],
       faq: [
-        ["ट्रांस-जीत एक्सप्रेस की शुरुआत किसने की?", "ट्रांस-जीत एक्सप्रेस की शुरुआत 2012 में विशाखापत्तनम में श्याम किशोर मिश्रा ने की।"],
+        ["ट्रांस-जीत एक्सप्रेस की शुरुआत किसने की?", "ट्रांस-जीत एक्सप्रेस की शुरुआत 2012 में विशाखापत्तनम में श्याम किशोर मिश्रा, सी. के. मिश्रा और एस. के. मिश्रा ने मिलकर की।"],
         ["ट्रांस-जीत एक्सप्रेस की टीम कितनी अनुभवी है?", "हमारी लीडरशिप टीम के पास ट्रांसपोर्ट, लॉजिस्टिक्स, फ़ाइनेंस और कस्टमर सर्विस में कुल मिलाकर 100 साल से ज़्यादा का अनुभव है।"],
       ],
     },
