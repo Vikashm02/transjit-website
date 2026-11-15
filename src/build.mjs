@@ -253,7 +253,8 @@ ${body}
 ${footerHtml(t, ctx)}
 <script src="/main.js" defer></script>
 </body>
-</html>`;
+</html>
+<!-- build ${(process.env.GITHUB_SHA || "local").slice(0, 7)} -->`;
 }
 
 function faqHtml(t, items, title, eyebrow) {
