@@ -1,4 +1,8 @@
-name: Deploy website
+name: Build website for Hostinger
+
+# On every push to main: build the live site and publish the finished files
+# to the "hostinger" branch. Hostinger's Git deployment pulls that branch
+# into public_html for www.transjitexpress.com.
 
 on:
   push:
@@ -6,12 +10,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: hostinger-build
   cancel-in-progress: true
 
 jobs:
@@ -24,16 +26,22 @@ jobs:
           node-version: 20
       - name: Build site (live mode, search engines allowed)
         run: SITE_LIVE=1 npm run build
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Add Apache rules (https redirect, 404 page)
+        run: |
+          cat > dist/.htaccess <<'EOF'
+          RewriteEngine On
+          RewriteCond %{HTTPS} off
+          RewriteRule ^ https://www.transjitexpress.com%{REQUEST_URI} [L,R=301]
+          RewriteCond %{HTTP_HOST} ^transjitexpress\.com$ [NC]
+          RewriteRule ^ https://www.transjitexpress.com%{REQUEST_URI} [L,R=301]
+          ErrorDocument 404 /404.html
+          EOF
+      - name: Publish built files to the hostinger branch
+        run: |
+          cd dist
+          git init -q -b hostinger
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Build from ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" hostinger
