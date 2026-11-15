@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://www.transjitexpress.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^transjitexpress\.com$ [NC]
+RewriteRule ^ https://www.transjitexpress.com%{REQUEST_URI} [L,R=301]
+ErrorDocument 404 /404.html
